@@ -1,0 +1,28 @@
+/* src/fonts.scss */
+
+/* Black Weight */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Extra Bold Weight */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Regular Weight (Using the .ttf version) */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }

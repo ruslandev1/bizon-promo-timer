@@ -12,26 +12,28 @@
       />
     </div>
 
-    <p class="promo__date">01.06.2026 TARİXİNDƏ</p>
-    <p class="promo__subtitle">START VERİLƏCƏK LOTEREYA ÜÇÜN GERİ SAYIM BAŞLADI.</p>
-
-    <div class="promo__timer" role="timer" aria-live="polite">
-      <div class="promo__unit">
-        <span class="promo__value">{{ timeLeft().days | number: '2.0' }}</span>
-        <span class="promo__label">GÜN</span>
+    <section class="promo__timer__container">
+      <p class="promo__date">01.06.2026 TARİXİNDƏ</p>
+      <p class="promo__subtitle">START VERİLƏCƏK LOTEREYA ÜÇÜN GERİ SAYIM BAŞLADI.</p>
+      
+      <div class="promo__timer" role="timer" aria-live="polite">
+        <div class="promo__unit">
+          <span class="promo__value">{{ timeLeft().days | number: '2.0' }}</span>
+          <span class="promo__label">GÜN</span>
+        </div>
+        <div class="promo__unit">
+          <span class="promo__value">{{ timeLeft().hours | number: '2.0' }}</span>
+          <span class="promo__label">SAAT</span>
+        </div>
+        <div class="promo__unit">
+          <span class="promo__value">{{ timeLeft().minutes | number: '2.0' }}</span>
+          <span class="promo__label">DƏQİQƏ</span>
+        </div>
+        <div class="promo__unit">
+          <span class="promo__value">{{ timeLeft().seconds | number: '2.0' }}</span>
+          <span class="promo__label">SANİYƏ</span>
+        </div>
       </div>
-      <div class="promo__unit">
-        <span class="promo__value">{{ timeLeft().hours | number: '2.0' }}</span>
-        <span class="promo__label">SAAT</span>
-      </div>
-      <div class="promo__unit">
-        <span class="promo__value">{{ timeLeft().minutes | number: '2.0' }}</span>
-        <span class="promo__label">DƏQİQƏ</span>
-      </div>
-      <div class="promo__unit">
-        <span class="promo__value">{{ timeLeft().seconds | number: '2.0' }}</span>
-        <span class="promo__label">SANİYƏ</span>
-      </div>
-    </div>
+    </section>
   </section>
 </main>
