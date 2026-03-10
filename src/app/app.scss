@@ -119,12 +119,12 @@
   .promo__logo {
     position: relative;
     align-self: flex-start;
-    top: 50px;
-    left: 12.5rem;
+    top: 20px;
+    left: 8rem;
   }
 
   .promo__logo-icon {
-    height: 7em;
+    height: 6em;
   }
 
   .promo__content {
@@ -138,11 +138,10 @@
   .promo__headline {
     margin-bottom: 1.5rem;
     align-self: flex-start;
-    justify-self: flex-start;
   }
 
   .promo__headline-img {
-    width: min(32vw, 640px);
+    width: min(32vw, 400px);
   }
 
   .promo__timer__container {
@@ -186,3 +185,23 @@
   }
 }
 
+
+@media (min-width: 1530px) {
+  .promo__logo {
+    position: relative;
+    align-self: flex-start;
+    top: 5.25rem;
+    left: 12.5rem;
+  }
+  .promo__logo-icon {
+    height: 7em;
+  }
+
+  .promo__headline {
+    align-self: flex-start;
+  }
+
+  .promo__headline-img {
+    width: min(32vw, 560px);
+  }
+}
